@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | M Arshad</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-copy p {
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* ================================
+   PROFILE IMAGE
+================================ */
+
+.profile-box {
+    width: 400px;
+    height: 480px;
+    padding: 7px;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.profile-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+
+/* ================================
+   STATS
+================================ */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-stat {
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+}
+
+.about-stat strong {
+    display: block;
+    font-size: 18px;
+}
+
+.about-stat span {
+    font-size: 10px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: left;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .profile-box {
+        width: 300px;
+        height: 380px;
+    }
+
+    .about-stats {
+        width: 300px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .about-copy {
+        width: 100%;
+    }
+
+    .about-copy p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .profile-box {
+        width: 220px;
+        height: 280px;
+        padding: 6px;
+        border-radius: 18px;
+    }
+
+    .profile-box img {
+        border-radius: 13px;
+    }
+
+    .about-stats {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .about-stat {
+        padding: 12px 5px;
+    }
+
+    .about-stat strong {
+        font-size: 17px;
+    }
+
+    .about-stat span {
+        font-size: 9px;
+    }
+
+}
+
+
+/* ================================
+   VERY SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+
+    .profile-box {
+        width: 190px;
+        height: 245px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="bg-grid"></div>
+
+
+<!-- ================================
+     NAVBAR
+================================ -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        M<span>A</span>.
+    </a>
+
+    <button class="menu-btn">☰</button>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- ================================
+     PAGE HERO
+================================ -->
+
+<section class="page-hero section">
+
+    <p class="eyebrow">
+        01 — ABOUT ME
+    </p>
+
+    <h1>
+        Turning AI concepts into
+        <span>working projects.</span>
+    </h1>
+
+    <p class="hero-text">
+        A practical AI learner focused on building useful systems,
+        not just studying theory.
+    </p>
+
+</section>
+
+
+<!-- ================================
+     ABOUT
+================================ -->
+
+<section class="section">
+
+    <div class="about-grid">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="about-copy">
+
+            <p>
+                I’m M Arshad, an Artificial Intelligence student and aspiring AI developer
+                with a strong interest in building intelligent, practical, and real-world
+                solutions. My journey in AI has focused on developing a solid foundation
+                in Machine Learning, Deep Learning, Computer Vision, and modern AI
+                technologies, while continuously improving my ability to turn concepts
+                into working applications.
+            </p>
+
+            <p>
+                I have worked on a variety of AI and machine learning projects involving
+                predictive modeling, neural networks, image classification, object
+                detection, natural language processing, sequence modeling, attention
+                mechanisms, and Transformer-based architectures. Through these projects,
+                I have gained practical experience in developing, training, evaluating,
+                and deploying AI models.
+            </p>
+
+            <p>
+                My current focus is on Computer Vision and applied AI, particularly
+                intelligent systems that can interact with and understand the real world.
+                I’m also exploring AI deployment, robotics, UAV/drone technologies,
+                and AI-powered infrastructure inspection, with the goal of combining
+                software intelligence with real-world systems.
+            </p>
+
+            <p>
+                I believe that learning AI goes beyond understanding algorithms—it is
+                about solving meaningful problems, building useful applications, and
+                continuously experimenting with new technologies. I’m passionate about
+                learning, developing innovative solutions, and growing toward a
+                professional career in Artificial Intelligence, Computer Vision,
+                Robotics, and intelligent autonomous systems.
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="about-right">
+
+
+            <!-- IMAGE -->
+
+            <div class="profile-box">
+
+                <img
+                    src="img1.jpg"
+                    alt="M Arshad - Artificial Intelligence"
+                >
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="about-stats">
+
+
+                <div class="about-stat">
+
+                    <strong>AI</strong>
+
+                    <span>
+                        Core Focus
+                    </span>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong>CV</strong>
+
+                    <span>
+                        Computer Vision
+                    </span>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong>DL</strong>
+
+                    <span>
+                        Deep Learning
+                    </span>
+
+                </div>
+
+
+                <div class="about-stat">
+
+                    <strong>UAV</strong>
+
+                    <span>
+                        Future Direction
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     LANGUAGES
+================================ -->
+
+<section class="section compact-section">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            LANGUAGES
+        </p>
+
+        <h2>
+            Languages I <span>speak.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="language-grid">
+
+        <div>
+            <strong>English</strong>
+            <span>Professional</span>
+        </div>
+
+        <div>
+            <strong>Urdu</strong>
+            <span>Native / Fluent</span>
+        </div>
+
+        <div>
+            <strong>Pashto</strong>
+            <span>Native / Fluent</span>
+        </div>
+
+        <div>
+            <strong>German</strong>
+            <span>A1 Completed</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <div class="footer-logo">
+        M<span>A</span>.
+    </div>
+
+    <p>
+        © <span id="year"></span> M Arshad.
+    </p>
+
+    <a href="contact.html">
+        Contact ↗
+    </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

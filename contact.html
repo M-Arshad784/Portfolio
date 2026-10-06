@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | M Arshad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Grid -->
+    <div class="bg-grid"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            M<span>A</span>.
+        </a>
+
+        <button class="menu-btn">☰</button>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="skills.html">Skills</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="education.html">Education</a>
+
+            <a class="active" href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="page-hero section">
+
+            <p class="eyebrow">
+                05 — CONTACT
+            </p>
+
+            <h1>
+                Have an AI idea?
+                <br>
+                <span>Let’s talk about it.</span>
+            </h1>
+
+            <p class="hero-text">
+                Tell me about your project, idea, or opportunity.
+                I’ll get back to you through email.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+
+        <section class="section contact-section">
+
+            <div class="contact-layout">
+
+
+                <!-- ================= LEFT SIDE ================= -->
+
+                <div class="contact-info">
+
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Let’s build something
+                        <span>useful.</span>
+                    </h2>
+
+                    <p>
+                        Whether you have an AI project, internship opportunity,
+                        collaboration idea, or a technical question,
+                        feel free to reach out.
+                    </p>
+
+
+                    <!-- CONTACT DETAILS -->
+
+                    <div class="contact-details">
+
+
+                        <!-- EMAIL -->
+
+                        <a href="mailto:macoder18@gmail.com">
+
+                            <small>
+                                EMAIL
+                            </small>
+
+                            <strong>
+                                macoder18@gmail.com
+                            </strong>
+
+                        </a>
+
+
+                        <!-- GITHUB -->
+
+                        <a href="https://github.com/M-Arshad784"
+                           target="_blank">
+
+                            <small>
+                                GITHUB
+                            </small>
+
+                            <strong>
+                                M-Arshad784 ↗
+                            </strong>
+
+                        </a>
+
+
+                        <!-- LINKEDIN -->
+
+                        <a href="https://www.linkedin.com/in/m-arshad-68a46141/"
+                           target="_blank">
+
+                            <small>
+                                LINKEDIN
+                            </small>
+
+                            <strong>
+                                M Arshad ↗
+                            </strong>
+
+                        </a>
+
+
+                        <!-- WHATSAPP -->
+
+                        <a href="https://wa.me/923705485808"
+                           target="_blank">
+
+                            <small>
+                                WHATSAPP
+                            </small>
+
+                            <strong>
+                                +92 370 5485808 ↗
+                            </strong>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- LANGUAGES -->
+
+                    <div class="language-mini">
+
+                        <small>
+                            LANGUAGES
+                        </small>
+
+                        <span>English</span>
+                        <span>Urdu</span>
+                        <span>Pashto</span>
+                        <span>German</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= RIGHT SIDE FORM ================= -->
+
+                <form
+                    id="contactForm"
+                    class="contact-form"
+                    action="https://formspree.io/f/mdeakodr"
+                    method="POST"
+                >
+
+
+                    <!-- NAME -->
+
+                    <label>
+
+                        Name
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </label>
+
+
+
+                    <!-- PHONE -->
+
+                    <label>
+
+                        Phone Number
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="+92 XXX XXXXXXX"
+                        >
+
+                    </label>
+
+
+
+                    <!-- EMAIL -->
+
+                    <label>
+
+                        Email
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </label>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <label>
+
+                        Describe your idea
+
+                        <textarea
+                            name="message"
+                            rows="6"
+                            placeholder="Tell me about your idea, project, or opportunity..."
+                            required
+                        ></textarea>
+
+                    </label>
+
+
+
+                    <!-- EMAIL SUBJECT -->
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Project Inquiry - M Arshad Portfolio"
+                    >
+
+
+
+                    <!-- SEND BUTTON -->
+
+                    <button
+                        class="btn primary"
+                        id="sendButton"
+                        type="submit"
+                    >
+                        Send Message ↗
+                    </button>
+
+
+
+                    <!-- SUCCESS MESSAGE -->
+
+                    <div
+                        id="successMessage"
+                        class="success-message"
+                        style="display: none;"
+                    >
+
+                        <strong>
+                            ✓ Message sent successfully
+                        </strong>
+
+                        <p>
+                            We will get in touch using WhatsApp or email
+                            within 24 hours. Stay tuned!
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ERROR MESSAGE -->
+
+                    <div
+                        id="formError"
+                        class="form-error"
+                        style="display: none;"
+                    ></div>
+
+
+
+                    <!-- FORM NOTE -->
+
+                    <p
+                        id="formNote"
+                        class="form-note"
+                    >
+                        Your message will be sent directly to my email.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            M<span>A</span>.
+        </div>
+
+        <p>
+            © <span id="year"></span> M Arshad.
+        </p>
+
+        <a href="index.html">
+            Home ↑
+        </a>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        // Get form elements
+        const contactForm = document.getElementById("contactForm");
+
+        const sendButton = document.getElementById("sendButton");
+
+        const successMessage =
+            document.getElementById("successMessage");
+
+        const formError =
+            document.getElementById("formError");
+
+        const formNote =
+            document.getElementById("formNote");
+
+
+        // Form submit
+        contactForm.addEventListener("submit", async function (event) {
+
+            // Stop normal page navigation
+            event.preventDefault();
+
+
+            // Hide old messages
+            successMessage.style.display = "none";
+
+            formError.style.display = "none";
+
+
+            // Disable button
+            sendButton.disabled = true;
+
+            sendButton.innerHTML = "Sending...";
+
+
+            try {
+
+                // Collect form data
+                const formData = new FormData(contactForm);
+
+
+                // Send data to Formspree
+                const response = await fetch(
+                    contactForm.action,
+                    {
+                        method: "POST",
+
+                        body: formData,
+
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }
+                );
+
+
+                // ================= SUCCESS =================
+
+                if (response.ok) {
+
+                    // Clear form
+                    contactForm.reset();
+
+
+                    // Show success message
+                    successMessage.style.display = "block";
+
+
+                    // Change button text
+                    sendButton.innerHTML =
+                        "Message Sent ✓";
+
+
+                    // Hide note
+                    formNote.style.display = "none";
+
+
+                }
+
+
+                // ================= ERROR =================
+
+                else {
+
+                    let data = {};
+
+                    try {
+
+                        data = await response.json();
+
+                    } catch (error) {
+
+                        data = {};
+
+                    }
+
+
+                    if (data.errors) {
+
+                        formError.innerHTML =
+                            data.errors
+                                .map(error => error.message)
+                                .join("<br>");
+
+                    }
+
+                    else {
+
+                        formError.innerHTML =
+                            "Unable to send your message. Please try again.";
+
+                    }
+
+
+                    // Show error
+                    formError.style.display = "block";
+
+
+                    // Enable button again
+                    sendButton.disabled = false;
+
+                    sendButton.innerHTML =
+                        "Send Message ↗";
+
+                }
+
+            }
+
+
+            // ================= CONNECTION ERROR =================
+
+            catch (error) {
+
+                formError.innerHTML =
+                    "Unable to connect to the email service. Please try again.";
+
+
+                formError.style.display = "block";
+
+
+                sendButton.disabled = false;
+
+                sendButton.innerHTML =
+                    "Send Message ↗";
+
+            }
+
+        });
+
+
+
+        // ================= CURRENT YEAR =================
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>
