@@ -1,0 +1,189 @@
+<!-- from pathlib import Path
+import zipfile
+
+root = Path("/mnt/data/arshad_ai_portfolio_multipage")
+projects = root / "projects.html"
+
+html = r''' -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | M Arshad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<header class="navbar">
+<a href="index.html" class="logo">M<span>A</span>.</a>
+<button class="menu-btn">☰</button>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a class="active" href="projects.html">Projects</a>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="page-hero section">
+<p class="eyebrow">03 — PROJECT PORTFOLIO</p>
+<h1>My <span>projects.</span></h1>
+<p class="hero-text">A structured collection of my Machine Learning, Deep Learning, Computer Vision, and Web Development work. Every project links directly to its GitHub repository for easy access and download.</p>
+</section>
+
+<section class="section project-section">
+<div class="category-heading">
+<p class="eyebrow">MACHINE LEARNING</p>
+<h2>Machine Learning <span>Projects</span></h2>
+<p>Prediction, classification, clustering, decision-support, data analysis, and practical machine learning applications.</p>
+</div>
+
+<div class="project-list">
+<br><a class="repo-item" href="https://github.com/M-Arshad784/FuelSense" target="_blank"><div><h3>1. Fuel Consumption ML</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Health_Care_Patient" target="_blank"><div><h3>2. Health Care Patient ML</h3></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Student-Performance-Prediction" target="_blank"><div><h3>3. Student Performance Prediction</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Heart-Disease-Prediction-System" target="_blank"><div><h3>4. Heart Disease Prediction</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Products-WholeSale-Price-Detection" target="_blank"><div><h3>5. Wholesale Price Detection</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Fraud-Transaction-Detection" target="_blank"><div><h3>6. Fraud Transaction Detection</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Car-Purchase-Price-Prediction" target="_blank"><div><h3>7. Car Purchase Price Prediction</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Customer-Segmentation-Unsupervised-ML" target="_blank"><div><h3>8. Customer Segmentation — Unsupervised ML</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Student-Performance-According-to-study-Hours" target="_blank"><div><h3>9. Student Performance According to Study Hours</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/AI-Decision-Support-System-for-Career-Selection" target="_blank"><div><h3>10. AI Decision Support System for Career Selection</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Health_Care_Patient" target="_blank"><div><h3>11. Health Care Patient ML</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Demand-Forecasting-ML-DL/tree/main" target="_blank"><div><h3>12. Demand Forecasting — ML + DL</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Point-of-Sale-Web-Application-POS-" target="_blank"><div><h3>13. Point of Sale Web Application</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Registration-Form" target="_blank"><div><h3>14. Registration Form</h3><p>Registration form development project.</p></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Matrix-Operation" target="_blank"><div><h3>15. Matrix Operation</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/iterative-methods-solver" target="_blank"><div><h3>16. Iterative Method Solver</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Enhanced-Multimodal-Biometric-Recognition-Research-Paper" target="_blank"><div><h3>17. Enhanced Multimodal Biometric Recognition</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/InternGrow_DataPreprocessing_EDA" target="_blank"><div><h3>18. Data Preprocessing & EDA</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/InternGrow_Customer_Churn_Prediction" target="_blank"><div><h3>19. Customer Churn Prediction</h3></div></a>
+</div>
+</section>
+
+<!-- Deep Learning Projects -->
+<section class="section project-section">
+<div class="category-heading">
+<p class="eyebrow">DEEP LEARNING</p>
+<h2>Deep Learning <span>Projects</span></h2>
+</div><br><br>
+
+<div class="sub-heading"><h2>ANN — Artificial Neural Networks</h2></div>
+<div class="project-list">
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Graduate_Admission_Prediction_ANN" target="_blank"><div><h3>1. Graduate Admission Prediction — ANN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Demand-Forecasting_ML_CNN" target="_blank"><div><h3>2. Demand Forecasting — ML + CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Customer_Churn_Prediction_ANN" target="_blank"><div><h3>3. Customer Churn Prediction — ANN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Credit_Card_Fraud_Detection_ANN" target="_blank"><div><h3>4. Credit Card Fraud Detection — ANN</h3></div></a><br><br>
+</div>
+
+<div class="sub-heading"><h2>CNN — Convolutional Neural Networks</h2></div>
+<div class="project-list">
+<br><a class="repo-item" href="https://github.com/M-Arshad784/potato-disease-prediction_CNN" target="_blank"><div><h3>1. Potato Disease Prediction — CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Cat_vs_Dog_Classification_CNN" target="_blank"><div><h3>2. Cat vs Dog Classification — CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Data_Augmentation_CNN" target="_blank"><div><h3>3. Data Augmentation — CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Food_Classification_CNN" target="_blank"><div><h3>4. Food Classification — CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Vehicle-Image-Classification" target="_blank"><div><h3>5. Vehicle Image Classification — CNN</h3></div></a><br><br>
+</div>
+
+<div class="sub-heading"><h2>RNN — Recurrent Neural Networks</h2></div><br>
+<div class="project-list">
+<a class="repo-item" href="https://github.com/M-Arshad784/Fake_news_detector_RNN" target="_blank"><div><h3>1. Fake News Detector — RNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Next_Word_Prediction_RNN" target="_blank"><div><h3>2. Next Word Predictor — RNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Sentiment_Analysis_RNN" target="_blank"><div><h3>3. Sentiment Analysis — RNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Stock_Price_Prediction_RNN" target="_blank"><div><h3>4. Stock Price Prediction — RNN</h3></div></a><br><br>
+</div>
+
+<div class="sub-heading"><h2>S2S — Sequence-to-Sequence & Attention</h2></div><br>
+<div class="project-list">
+<a class="repo-item" href="https://github.com/M-Arshad784/Attention_Mechanism_S2S" target="_blank"><div><h3>1. Attention Mechanism — S2S</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Bahdanau_vs_Luong_Attention_S2S" target="_blank"><div><h3>2. Bahdanau vs Luong Attention — S2S</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Encoder_Decoder_S2S" target="_blank"><div><h3>3. Encoder Decoder — S2S</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/English_Urdu_All_Attention_Mechanisms_S2S" target="_blank"><div><h3>4. English–Urdu with Attention Mechanisms — S2S</h3></div></a><br><br>
+</div>
+
+<div class="sub-heading"><h2>Transformers</h2></div>
+<div class="project-list">
+<br><a class="repo-item" href="https://github.com/M-Arshad784/English_to_French_Transformer" target="_blank"><div><h3>1. English to French — Transformer</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/English_to_Urdu_Transformer" target="_blank"><div><h3>2. English to Urdu — Transformer</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/NewYork_City_Taxi_Trip_Transformer" target="_blank"><div><h3>3. New York City Taxi Trip — Transformer</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/Stock_Price_Prediction_Transformer" target="_blank"><div><h3>4. Stock Price Prediction — Transformer</h3></div></a>
+</div>
+</section>
+
+<section class="section project-section">
+<div class="category-heading">
+<p class="eyebrow">INTERNSHIP PROJECTS</p>
+<h2>Internship <span>Projects</span></h2>
+</div><br>
+<div class="sub-heading"><h2>CodeAlpha Internship</h2></div>
+<div class="project-list">
+<br><a class="repo-item" href="https://github.com/M-Arshad784/CodeAlpha_Credit_Scoring_Model" target="_blank"><div><h3>1. Credit Scoring Model</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/CodeAlpha___Handwritten-Digit-Classification-using-CNN" target="_blank"><div><h3>2. Handwritten Digit Classification — CNN</h3></div></a>
+<br><a class="repo-item" href="https://github.com/M-Arshad784/CodeAlpha___Heart_Disease_Prediction" target="_blank"><div><h3>3. Heart Disease Prediction</h3></div></a>
+</div>
+</section>
+
+<section class="section project-section">
+<div class="category-heading">
+<p class="eyebrow">COMPUTER VISION</p>
+<h2>Computer Vision <span>Projects</span></h2>
+<p>Computer Vision projects will be added here, including object detection, image classification, OpenCV, YOLO, and drone vision work.</p>
+</div>
+<div class="placeholder-card">
+<div><span class="placeholder-icon"><br></span><h3>Computer Vision Projects Coming Soon</h3><p>GitHub repositories and project links will be added here.</p></div>
+<a href="https://github.com/M-Arshad784" target="_blank" class="btn secondary">GitHub Profile ↗</a>
+</div>
+</section>
+
+<section class="section project-section">
+<div class="category-heading">
+<p class="eyebrow">WEB DEVELOPMENT</p>
+<h2>Web Development <span>Projects</span></h2>
+<p>Websites, software applications, dashboards, and practical development projects will be organized here.</p>
+</div>
+<div class="placeholder-card">
+<div><span class="placeholder-icon"><br></span><h3>Websites & Software Coming Soon</h3><p>Website and software repositories will be added here.</p></div>
+<a href="contact.html" class="btn secondary">Discuss a Project ↗</a>
+</div>
+</section>
+
+<section class="section project-note">
+<div class="note-box">
+<p class="eyebrow">NEED COMPLETE SOURCE CODE?</p>
+<h2>Looking for complete <span>AI project code?</span></h2>
+<p>If you need complete source code, project files, or guidance for Computer Vision, Machine Learning, or Deep Learning projects, feel free to contact me.</p>
+<a href="contact.html" class="btn primary">Contact Me ↗</a>
+</div>
+</section>
+</main>
+
+<footer><div class="footer-logo">M<span>A</span>.</div><p>© <span id="year"></span> M Arshad.</p><a href="contact.html">Contact ↗</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
+<!-- ''' -->
+
+<!-- # Add project-page-specific CSS to the existing stylesheet -->
+<!-- css_path = root / "style.css"
+css = css_path.read_text(encoding="utf-8")
+extra = r'''
+.category-heading{max-width:850px;margin-bottom:34px}.category-heading h2{font-size:clamp(34px,5vw,55px);letter-spacing:-2px;margin-bottom:14px}.category-heading>p:last-child{color:#7f8a9e;font-size:14px;max-width:760px}.project-section{padding-top:70px;padding-bottom:70px}.project-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.repo-item{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:15px;border:1px solid var(--line);background:#0a0e15;border-radius:10px;padding:15px 17px;transition:.22s}.repo-item:hover{border-color:#374357;background:#0d121c;transform:translateY(-2px)}.repo-item>span{font:700 10px "Space Grotesk";color:#657185}.repo-item h3{font-size:14px;margin-bottom:4px}.repo-item p{font-size:10px;color:#707c90}.repo-item>b{font-size:9px;color:#8f9bad;white-space:nowrap}.sub-heading{margin:42px 0 15px}.sub-heading h3{font-size:18px;color:#cbd2de}.placeholder-card{display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px dashed #303b4c;background:#0a0e15;border-radius:14px;padding:28px}.placeholder-card>div{display:grid;grid-template-columns:50px 1fr;column-gap:16px;align-items:center}.placeholder-card h3{font-size:19px}.placeholder-card p{font-size:12px;color:#748095;margin-top:5px}.placeholder-icon{grid-row:span 2;display:grid;place-items:center;width:50px;height:50px;border-radius:10px;background:#141025;color:#a08eff;font-size:11px;font-weight:800}.project-note{padding-top:40px}.note-box{border:1px solid #282f42;background:linear-gradient(135deg,#101126,#0b0f17);border-radius:16px;padding:38px;max-width:900px}.note-box h2{font-size:clamp(30px,4vw,45px);letter-spacing:-1.5px}.note-box>p:not(.eyebrow){color:#7f8a9e;font-size:13px;max-width:680px;margin:15px 0 23px}@media(max-width:850px){.project-list{grid-template-columns:1fr}.placeholder-card{align-items:flex-start;flex-direction:column}}@media(max-width:560px){.repo-item{grid-template-columns:28px 1fr}.repo-item>b{display:none}.placeholder-card{padding:22px}.placeholder-card>div{grid-template-columns:42px 1fr}.placeholder-icon{width:42px;height:42px}.note-box{padding:25px}}
+'''
+if extra not in css:
+    css += extra
+projects.write_text(html, encoding="utf-8")
+css_path.write_text(css, encoding="utf-8")
+
+zip_path = Path("/mnt/data/M_Arshad_MultiPage_Portfolio_Projects_Updated.zip")
+with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
+    for f in root.iterdir():
+        z.write(f, f.name)
+print(zip_path) -->
